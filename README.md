@@ -11,11 +11,7 @@ optimizer work that can OOM a self-hosted Next container under load.
 
 ## Install
 
-Published to GitHub Packages. Add an `.npmrc` to the consuming project:
-
-```
-@morgendigital:registry=https://npm.pkg.github.com
-```
+Public on npm — no auth or `.npmrc` needed:
 
 ```bash
 pnpm add @morgendigital/next-imgproxy
