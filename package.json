@@ -1,0 +1,54 @@
+{
+  "name": "@morgendigital/next-imgproxy",
+  "version": "0.1.0",
+  "description": "next/image loader + helpers that route images through a shared imgproxy instance (off-server AVIF/WebP from S3).",
+  "keywords": [
+    "next",
+    "next-image",
+    "imgproxy",
+    "image-loader",
+    "payload",
+    "s3",
+    "avif",
+    "webp"
+  ],
+  "license": "UNLICENSED",
+  "author": "Morgen Digital",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/morgendigital/next-imgproxy.git"
+  },
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "peerDependencies": {
+    "next": ">=14"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "next": "^15.0.0",
+    "tsup": "^8.3.0",
+    "typescript": "^5.4.0"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  }
+}
