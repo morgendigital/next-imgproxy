@@ -12,7 +12,7 @@
     "avif",
     "webp"
   ],
-  "license": "UNLICENSED",
+  "license": "MIT",
   "author": "Morgen Digital",
   "repository": {
     "type": "git",
